@@ -1,0 +1,32 @@
+html, body { margin: 0; height: 100%; overflow: hidden; background: #1a1420; font-family: 'Segoe UI', system-ui, sans-serif; }
+#game { position: fixed; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; }
+#hud { position: fixed; inset: 0; pointer-events: none; color: #fff; }
+#objective-box { position: absolute; top: 14px; left: 14px; max-width: 420px; background: rgba(10,10,16,0.55); padding: 8px 12px; border-left: 4px solid #ffd23a; border-radius: 4px; }
+#objective { font-size: 15px; font-weight: 600; text-shadow: 0 1px 2px #000; }
+#timer { margin-top: 4px; font-size: 18px; font-weight: 800; color: #ffd23a; }
+#top-right { position: absolute; top: 14px; right: 14px; text-align: right; }
+#stars { font-size: 26px; letter-spacing: 3px; text-shadow: 0 2px 3px #000; }
+#money { font-size: 24px; font-weight: 800; color: #7be07b; text-shadow: 0 2px 3px #000; }
+#health-bar { margin-top: 6px; width: 190px; height: 18px; background: rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.4); border-radius: 3px; position: relative; margin-left: auto; }
+#health-fill { height: 100%; width: 100%; background: #37c24a; transition: width 0.2s; }
+#health-text { position: absolute; inset: 0; text-align: center; font-size: 12px; line-height: 18px; font-weight: 700; text-shadow: 0 1px 2px #000; }
+#speed { position: absolute; right: 16px; bottom: 190px; font-size: 30px; font-weight: 800; text-shadow: 0 2px 4px #000; }
+#minimap { position: absolute; left: 14px; bottom: 14px; border: 2px solid rgba(255,255,255,0.5); border-radius: 4px; background: #10131a; }
+#crosshair { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 26px; font-weight: 800; color: rgba(255,255,255,0.9); text-shadow: 0 0 4px #000; }
+#feed { position: absolute; left: 14px; bottom: 190px; max-width: 380px; }
+.feed-msg { background: rgba(10,10,16,0.6); padding: 5px 10px; margin-top: 4px; border-radius: 3px; font-size: 14px; transition: opacity 0.8s; }
+#help { position: absolute; bottom: 14px; left: 190px; font-size: 12px; color: rgba(255,255,255,0.75); text-shadow: 0 1px 2px #000; max-width: 500px; }
+#over, #story-complete { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(0,0,0,0.55); color: #fff; text-align: center; z-index: 20; }
+#over h1 { font-size: 84px; letter-spacing: 8px; color: #ff3b30; margin: 0; text-shadow: 0 4px 20px #000; }
+#story-complete h1 { font-size: 56px; letter-spacing: 4px; color: #ffd23a; margin: 0; text-shadow: 0 4px 20px #000; }
+#over p, #story-complete p { font-size: 18px; max-width: 520px; }
+button { pointer-events: auto; cursor: pointer; background: #ffd23a; color: #181210; border: 0; border-radius: 4px; padding: 12px 26px; font-size: 17px; font-weight: 800; margin: 6px; }
+button:hover { background: #ffde6b; }
+#start-screen { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; background: linear-gradient(180deg, rgba(20,10,30,0.55), rgba(20,10,30,0.85)); color: #fff; z-index: 10; }
+#start-screen .panel { max-width: 620px; padding: 28px 34px; background: rgba(12,8,18,0.72); border: 1px solid rgba(255,210,58,0.5); border-radius: 8px; text-align: center; }
+#start-screen h1 { font-size: 64px; letter-spacing: 10px; color: #ffd23a; margin: 0 0 4px; text-shadow: 0 4px 24px rgba(255,120,40,0.6); }
+.tagline { font-style: italic; color: #ffb347; margin: 0 0 14px; }
+.story { font-size: 15px; line-height: 1.5; text-align: left; }
+.controls { font-size: 13px; line-height: 1.7; text-align: left; background: rgba(255,255,255,0.07); padding: 10px 14px; border-radius: 5px; margin: 14px 0; }
+.buttons { margin: 10px 0 4px; }
+.note { font-size: 11px; color: rgba(255,255,255,0.6); }

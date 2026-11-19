@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VICE BAY</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<canvas id="game" aria-label="Vice Bay: an open-world crime game. Drive, run missions, lose the cops."></canvas>
+
+<div id="hud">
+  <div id="objective-box">
+    <div id="objective">The Pickup: Pick up the package at the yellow marker</div>
+    <div id="timer" style="display:none"></div>
+  </div>
+  <div id="top-right">
+    <div id="stars">☆☆☆☆☆</div>
+    <div id="money">$250</div>
+    <div id="health-bar"><div id="health-fill"></div><span id="health-text">100</span></div>
+  </div>
+  <div id="speed" style="display:none"></div>
+  <canvas id="minimap" width="160" height="160"></canvas>
+  <div id="crosshair" style="display:none">+</div>
+  <div id="feed"></div>
+  <div id="help"></div>
+</div>
+
+<div id="over" style="display:none">
+  <h1 id="over-title">WASTED</h1>
+  <p id="over-text"></p>
+  <button id="btn-respawn">Respawn — pay the fine</button>
+</div>
+
+<div id="story-complete" style="display:none">
+  <h1>STORY COMPLETE</h1>
+  <p>Vice Bay is yours. The package is delivered, the rivals are down, and the heat is off — for now.</p>
+  <button id="btn-story">Keep playing</button>
+</div>
+
+<div id="start-screen">
+  <div class="panel">
+    <h1>VICE BAY</h1>
+    <p class="tagline">A sunset city. A stolen package. Everybody wants a piece of you.</p>
+    <p class="story">You washed up in Vice Bay with $250 and a name nobody knows. A fixer named
+    Marlowe has a job: pick up a package, lose the heat, drop it across town, and
+    settle things with the dock crew. Four jobs. One city. No backup.</p>
+    <div class="controls">
+      <b>On foot</b> — WASD move · Shift run · Space jump · E enter car · F punch · Right-click / G shoot · R reload<br>
+      <b>Driving</b> — WASD gas / brake / steer · Space handbrake · E exit car<br>
+      <b>Camera</b> — click to lock the mouse, move to look around · M music on/off
+    </div>
+    <div class="buttons">
+      <button id="btn-new">New Game</button>
+      <button id="btn-continue">Continue</button>
+    </div>
+    <p class="note">An original game. No Rockstar content, no real brands — every street, car and face in Vice Bay is made up.</p>
+  </div>
+</div>
+
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>
